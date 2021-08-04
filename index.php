@@ -1,4 +1,6 @@
 <?php
+
+//Gülistan Ay - Github: https://github.com/gulistanay
 	require_once ('classN11.php');
 	$n11Params = [
 		'appKey' => '******************', 	//You should enter your n11 api key
