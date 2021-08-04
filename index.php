@@ -1,8 +1,8 @@
 <?php
 	require_once ('classN11.php');
 	$n11Params = [
-		'appKey' => 'd83ed152-e469-412d-9c15-488f8747b514',
-        'appSecret' => 'Kn86DDsZjHnR1otQ',
+		'appKey' => '******************', 	//You should enter your n11 api key
+        'appSecret' => '***************',     		//You should enter your n11 api secret
 	];
 	
 	$n11 = new N11($n11Params);
@@ -11,25 +11,25 @@
 	$orderList  = $n11->orderList (
 	[
 		"productId"=>'',
-		"status"=> 'Completed', 
+		"status"=> 'Completed',   //Pulls out completed orders. For other options you can use the documentation
 		"buyerName"=> '',
 		"orderNumber"=> '',
 		"productSellerCode" =>'',
 		"recipient"=> '',
 		"period"=>[
-			"startDate"=> '01/01/2021',
+			"startDate"=> '01/01/2021',   //Optionel - You can't enter a date
 			"endDate"=> ''     
 		] ,  
         "sortForUpdateDate" => '',     
         'pagingData' =>[ 
-                'currentPage' => 0,
+                'currentPage' => 0,    //first page
                 'pageSize'    => 100
                 ]      
 	]                
 	);
 
-	//var_dump($orderList);
-    //print_r($orderList);
+	
+    //print_r($orderList);  //If you want to see the content in local, you can activate it.
 
     $array = json_decode(json_encode($orderList), true);
 
