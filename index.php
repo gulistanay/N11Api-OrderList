@@ -19,7 +19,7 @@
 		"productSellerCode" =>'',
 		"recipient"=> '',
 		"period"=>[
-			"startDate"=> '01/01/2021',   //Optionel - You can't enter a date
+			"startDate"=> '01/01/2021',   //Optionel - You can leave the date blank
 			"endDate"=> ''     
 		] ,  
         "sortForUpdateDate" => '',     
